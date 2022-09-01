@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banana Speak</title>
+
+    <style>
+        textarea {
+            width: 80%;
+            height: 10vh;
+            display: block;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        #output {
+            border: 1px solid black;
+            height: 10vh;
+            width: 80%;
+            margin: 1rem;
+            padding: 1rem;
+        }
+
+        .text {
+            background-color: #F2C94C;
+            color: black;
+            padding: 1rem;
+            font-size: 40px;
+            font-weight: 600;
+            border-bottom-left-radius: 1rem;
+            text-align: center;
+        }
+
+        #btn-translate {
+            padding: 1rem;
+            background-color: #F2C94C;
+            border: none;
+            border-radius: 25px;
+            font-family: 'Kalam', cursive;
+            font-size: 18px;
+            margin-left: 60px;
+        }
+
+        .outputHeading {
+            padding: 1rem;
+            font-family: 'Kalam', cursive;
+            font-size: 22px;
+            margin-left: 55px;
+        }
+
+        .footer {
+            background-color: #F2C94C;
+            color: black;
+            font-size: larger;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .about {
+            text-align: center;
+            padding: 2rem;
+
+        }
+
+        #txt-input {
+            font-family: 'Kalam', cursive;
+            font-size: 18px;
+            margin-left: 60px;
+        }
+
+        #output {
+            overflow: scroll;
+            font-family: 'Kalam', cursive;
+            font-size: 18px;
+            margin-left: 60px;
+        }
+
+        .footerHeading {
+            margin-top: 15px;
+            font-weight: 600;
+            font-size: 30px;
+        }
+
+        body {
+            font-family: 'Kalam', cursive;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="text"> <i>Talk Pirate</i></nav>
+    <textarea id="txt-input"
+        placeholder="Put your sentence in English here and we will convert it to pirate"></textarea>
+    <button id="btn-translate">Translate To Pirate</button>
+
+    <div class="outputHeading">Output will Come here 👇</div>
+    <div id="output" style="padding: 1rem; font-size: large;"></div>
+    <script src="app.js" type="text/javascript"></script>
+    <footer class="footer">
+        <div class=footerHeading>About</div>
+        <p class="about">Do you want to talk like a pirate then this will help you to understand the language of pirate
+            and will help in speaking pirate.</p>
+    </footer>
+</body>
+
+</html>
