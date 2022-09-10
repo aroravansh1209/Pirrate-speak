@@ -1,105 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banana Speak</title>
+    <title>Pirate Speak</title>
 
     <style>
-        textarea {
-            width: 80%;
-            height: 10vh;
-            display: block;
-            margin: 1rem;
-            padding: 1rem;
-        }
+        @import url("https://fonts.googleapis.com/css2?family=Special+Elite&display=swap");
 
-        #output {
-            border: 1px solid black;
-            height: 10vh;
-            width: 80%;
-            margin: 1rem;
-            padding: 1rem;
-        }
+.logo {
+    width: 10vw;
+    height: 15vh;
+    position: relative;
+    left: 50px;
+}
 
-        .text {
-            background-color: #991b1b;
-            color: black;
-            padding: 1rem;
-            font-size: 40px;
-            font-weight: 600;
-            border-bottom-left-radius: 1rem;
-            text-align: center;
-        }
+.heading {
+    color: black;
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 600;
+    font-family:"Rock Salt",cursive;
+    border-bottom-left-radius: 1rem;
+    text-align: center;
+    position: relative;
+    top:-45px;            
+    margin-left:100px;
+    color: white;
+    
+}
 
-        #btn-translate {
-            padding: 1rem;
-            background-color: #991b1b;
-            border: none;
-            border-radius: 25px;
-            font-family: 'Kalam';
-            font-size: 18px;
-            margin-left: 60px;
-        }
+body {
+    background-image: url(https://images6.alphacoders.com/109/1094133.jpg);
+}
 
-        .outputHeading {
-            padding: 1rem;
-            font-family: 'Montserrat';
-            font-size: 22px;
-            margin-left: 55px;
-        }
 
-        .footer {
-            background-color: #991b1b;
-            color: black;
-            font-size: larger;
-            border-radius: 15px;
-            text-align: center;
-            margin-top: 60px;
-        }
+#txt-input {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    position: relative;
+    left: 50px;
+    width: 60%;
+    height: 10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: scroll;
+}
 
-        .about {
-            text-align: center;
-            padding: 2rem;
+#btn-translate {
+    font-family: "Special Elite", cursive;
+    padding: 1rem;
+    background-color: black;
+    margin-top:15px;
+    color: white;
+    font-size: 24px;
+    margin-left: 60px;
+    border: 1px solid white
+}
 
-        }
+.outputHeading {
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-left: 60px;
+ }
 
-        #txt-input {
-            font-family: 'Montserrat';
-            font-size: 18px;
-            margin-left: 60px;
-        }
+#output {
+    font-family: 'Montserrat';
+    font-size: 18px;
+    position: relative;
+    left:   50px;
+    top: 30px;
+    width: 60%;
+    height: 10vh;
+    display: block;
+    margin: 1rem;
+    padding: 1rem;
+    overflow: scroll;
+    background-color: white;
+}
+.footer {
+    box-sizing: border-box;
+    
+    width: 50%;
+    color: white;
+    font-size: larger;
+    border-radius: 15px;
+    text-align: center;
+    margin-top: 60px;
+    margin-left:65px;
+}
+.footerHeading {
+    margin-top: 15px;
+    font-weight: 600;
+    font-size: 40px;
+    font-family:OCR A Std, monospace;
+}
+.about {
+    text-align: center;
+    font-family: Comic Sans MS, Comic Sans, cursive;
+}
 
-        #output {
-            overflow: scroll;
-            font-family: 'Montserrat';
-            font-size: 18px;
-            margin-left: 60px;
-        }
-
-        .footerHeading {
-            margin-top: 15px;
-            font-weight: 600;
-            font-size: 30px;
-        }
-
-        body {
-            font-family: 'Montserrat';
-            overflow: hidden;
-        }
+#output{
+    padding: 1rem;
+    font-size: large;
+    color: black;
+}
     </style>
 </head>
-
 <body>
-    <nav class="text"> <i>Talk Pirate</i></nav>
-    <textarea id="txt-input"
-        placeholder="Put your sentence in English here and we will convert it to pirate"></textarea>
-    <button id="btn-translate">Translate To Pirate</button>
-
-    <div class="outputHeading">Output will Come here 👇</div>
-    <div id="output" style="padding: 1rem; font-size: large;"></div>
+    <div class="div-wrapper">
+       <img src="https://img.freepik.com/premium-vector/skeleton-skull-pirate-vector-illustration_43623-1090.jpg" alt="pirate logo" class="logo">
+       <span class="heading">Talk pirate </span>
+       <textarea id="txt-input" placeholder="Put your sentence in English here and we will convert it to pirate"></textarea>
+       <button id="btn-translate">Translate To Pirate</button>
+       <div class="outputHeading">Output will Come here 👇</div>
+       <div id="output"></div>
+       
+    </div>
+    </div>
     <script src="app.js" type="text/javascript"></script>
     <footer class="footer">
         <div class=footerHeading>About</div>
@@ -107,5 +128,4 @@
             and will help in speaking pirate.</p>
     </footer>
 </body>
-
 </html>
